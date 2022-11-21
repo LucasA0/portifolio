@@ -9,7 +9,7 @@ function ProjectsContainer() {
         {Projects.map((project) => (
           <div className="projects-card" key={project.id}>
             <div className="project-image">
-              <img src={`../../../public/images/${project.image}`} alt="" />
+              <img src={`./images/${project.image}`} alt="" />
             </div>
             <div className="project-info-container">
               <div className="project-infos">
