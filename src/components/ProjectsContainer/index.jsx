@@ -1,7 +1,7 @@
 import "../../styles/components/projectcontainer.sass";
 import { Projects } from "../../data/ProjectsData";
 
-function PojectsContainer() {
+function ProjectsContainer() {
   return (
     <section className="projects-container">
       <h2>Projetos em destaque</h2>
@@ -9,7 +9,7 @@ function PojectsContainer() {
         {Projects.map((project) => (
           <div className="projects-card" key={project.id}>
             <div className="project-image">
-              <img src={`../../../src/images/${project.image}`} alt="" />
+              <img src={`../../../public/images/${project.image}`} alt="" />
             </div>
             <div className="project-info-container">
               <div className="project-infos">
@@ -47,4 +47,4 @@ function PojectsContainer() {
   );
 }
 
-export default PojectsContainer;
+export default ProjectsContainer;

@@ -12,7 +12,7 @@ export const Projects = [
   {
     id: "cryptoapp",
     name: "Crypto News",
-    image: "CryptoNews.JPG",
+    image: "CryptoNews.PNG",
     tech: "React.Js, Ant Design, Chart.js, Millify, Redux, Moment",
     source: "https://github.com/LucasA0/CryptoNews",
     demo: "https://cryptoappnews.netlify.app",
@@ -20,7 +20,7 @@ export const Projects = [
   {
     id: "pomodoro",
     name: "Pomodoro App",
-    image: "Pomodoro.JPG",
+    image: "Pomodoro.PNG",
     tech: "React.Ts, TypeScript",
     source: "https://github.com/LucasA0/pomodoro-app",
     demo: "https://pomodoro-app-76ab.netlify.app/",
