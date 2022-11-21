@@ -8,10 +8,6 @@ import {
 
 import { DiHtml5 } from "react-icons/di";
 
-import Dashboard from "../assets/images/CryptoNews.PNG";
-import CryptoApp from "../assets/images/Dashboard.PNG";
-import Pomodoro from "../assets/images/Pomodoro.PNG";
-
 export const technologies = [
   {
     id: "html",
@@ -60,7 +56,7 @@ export const Projects = [
   {
     id: "dashboard",
     name: "Dashboard",
-    image: Dashboard,
+    image: "../../src/assets/images/Dashboard.JPG",
     tech: "React.Js, Tailwind, Syncfusion UI, React Icons, React Router",
     source: "https://github.com/LucasA0/professional-dashboard",
     demo: "https://grand-melba-05e51c.netlify.app",
@@ -68,7 +64,7 @@ export const Projects = [
   {
     id: "cryptoapp",
     name: "Crypto News",
-    image: CryptoApp,
+    image: "../../src/assets/images/CryptoNews.JPG",
     tech: "React.Js, Ant Design, Chart.js, Millify, Redux, Moment",
     source: "https://github.com/LucasA0/CryptoNews",
     demo: "https://cryptoappnews.netlify.app",
@@ -76,7 +72,7 @@ export const Projects = [
   {
     id: "pomodoro",
     name: "Pomodoro App",
-    image: Pomodoro,
+    image: "../../src/assets/images/Pomodoro.JPG",
     tech: "React.Ts, TypeScript",
     source: "https://github.com/LucasA0/pomodoro-app",
     demo: "https://pomodoro-app-76ab.netlify.app/",
