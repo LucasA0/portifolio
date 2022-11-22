@@ -4,12 +4,14 @@ import { Projects } from "../../data/ProjectsData";
 function ProjectsContainer() {
   return (
     <section className="projects-container">
-      <h2>Projetos em destaque</h2>
+      <h2 className="project-title">Projetos em destaque</h2>
       <div className="projects-card-container">
         {Projects.map((project) => (
           <div className="projects-card" key={project.id}>
             <div className="project-image">
-              <img src={`./images/${project.image}`} alt="" />
+              <a href={project.demo} target="__blank">
+                <img src={`./images/${project.image}`} alt="" />
+              </a>
             </div>
             <div className="project-info-container">
               <div className="project-infos">

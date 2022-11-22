@@ -5,8 +5,8 @@ import { SocialNetworks, InformationContainer } from "../index";
 function Sidebar() {
   return (
     <div id="sidebar">
-      <h1>Lucas Araujo</h1>
-      <img src={Avatar} alt="Lucas Araujo" />
+      <h1 className="name">Lucas Araujo</h1>
+      <img src={Avatar} alt="Lucas Araujo" className="avatar" />
       <p className="title">Desenvolvedor Front End</p>
       <SocialNetworks />
       <InformationContainer />
