@@ -10,4 +10,4 @@
 
 ### O site ainda não é responsivo para todos os aparelhos, estarei implementando em breve!
 
-## Aqui vai o link para darmos uma olhada mais afundo :point_right:https://lucas-araujo-portifolio.netlify.app/
+## Aqui vai o link para darmos uma olhada mais afundo :point_right:https://lucas-araujo.netlify.app/
