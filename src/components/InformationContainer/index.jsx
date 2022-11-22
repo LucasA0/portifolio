@@ -8,7 +8,7 @@ function InformationContainer() {
         <AiFillPhone id="phone-icon" />
         <div>
           <h3>Telefone</h3>
-          <p>(21) 99358-6894</p>
+          <p className="info-p">(21) 99358-6894</p>
         </div>
       </div>
       <div className="info-card">
@@ -22,7 +22,7 @@ function InformationContainer() {
         <AiFillEnvironment id="pin-icon" />
         <div>
           <h3>Localização</h3>
-          <p>Duque de Caxias / RJ</p>
+          <p className="info-p">Duque de Caxias / RJ</p>
         </div>
       </div>
     </div>
