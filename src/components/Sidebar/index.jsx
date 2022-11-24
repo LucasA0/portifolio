@@ -10,7 +10,7 @@ function Sidebar() {
       <p className="title">Desenvolvedor Front End</p>
       <SocialNetworks />
       <InformationContainer />
-      <a href="" className="btn">
+      <a href="../../utils/curriculo/Lucas araujo.pdf" className="btn" download>
         Baixar Currículo
       </a>
     </div>
