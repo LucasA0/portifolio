@@ -41,4 +41,18 @@ export const technologies = [
     knowledge:
       "Conhecimento e uso geral da ferramenta",
   },
+  {
+    id: "jest",
+    name: "Jest",
+    icon: "Jest.PNG",
+    knowledge:
+      "Conhecimento e uso geral da ferramenta",
+  },
+  {
+    id: "sass",
+    name: "Sass",
+    icon: "Sass.PNG",
+    knowledge:
+      "Conhecimento e uso basico da ferramenta",
+  },
 ];
