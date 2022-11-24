@@ -4,7 +4,7 @@
 ## Este é um portifolio pessoal, ainda não está 100% finalizado, pretendo adicionar novas features no futuro.
 
 ### Aqui vai um preview do app
-![image](https://user-images.githubusercontent.com/104575967/203096113-9c9ea9df-9f36-42b0-9a86-e6d3fd34e010.png)
+![image](https://user-images.githubusercontent.com/104575967/203794761-81bb0905-c3a1-4e74-85ac-eba1cc11dccf.png)
 
 
 
