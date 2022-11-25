@@ -8,9 +8,9 @@ function Sidebar() {
       <h1 className="name">Lucas Araujo</h1>
       <img src={Avatar} alt="Lucas Araujo" className="avatar" />
       <p className="title">Desenvolvedor Front End</p>
-      <SocialNetworks />
+      <SocialNetworks />  
       <InformationContainer />
-      <a href="../../utils/curriculo/Lucas araujo.pdf" className="btn" download>
+      <a href="https://drive.google.com/drive/folders/1CdsroaJR38yLLZ6RL9P6NWRcWovczU8h?usp=share_link" target="__blank" className="btn">
         Baixar Currículo
       </a>
     </div>
