@@ -28,6 +28,12 @@
     margin-top: 14rem
     margin-bottom: 1.5rem
     padding: .8rem 1.2rem
+    font-family: 'VT323', monospace
+  
+  .animated-underline
+    animation: blink 1s infinite
+    animation-fill-mode: none
+
 
   .btn
     @include mixins.btn
@@ -45,7 +51,7 @@
 
   #sidebar .title
     margin-top: 20rem
-    font-size: 1.4rem
+    font-size: 1.8rem
 
   #sidebar .btn
     margin-top: 1.8rem
@@ -58,7 +64,7 @@
     margin-top: 14rem
     margin-bottom: 1.5rem
     padding: .8rem 1.2rem
-    font-size: 1.1rem
+    font-size: 1.5rem
 
   #sidebar .name
     margin-top: 0rem
@@ -74,6 +80,7 @@
 
   #sidebar .title
     margin-top: 11rem
+    font-size: 1.5rem
 
   #sidebar .btn
     margin-top: 2.6rem
@@ -93,7 +100,7 @@
     margin-top: 27.5rem
     padding: 1.2rem 1.6rem
     margin-bottom: 0rem
-    font-size: 1.5rem
+    font-size: 1.8rem
 
   #sidebar .btn
     margin-top: 2rem
@@ -112,15 +119,24 @@
     margin-top: 20.5rem
     padding: 1.2rem 1.6rem
     margin-bottom: 0rem
-    font-size: 1.3rem
+    font-size: 1.5rem
 
 @media screen and ( max-width: 414px )
   #sidebar
-    height: 66rem
+    height: 64rem
 
   #sidebar .name
-    margin-top: 0rem
+    margin-top: -2rem
     font-size: 3rem
 
   #sidebar .title
-    margin-top: 15.5rem
+    margin-top: 13rem
+    font-size: 1.5rem
+
+
+@keyframes blink 
+  from
+    opacity: 0
+  to 
+    opacity: 1
+      

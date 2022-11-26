@@ -7,10 +7,10 @@ function Sidebar() {
     <div id="sidebar">
       <h1 className="name">Lucas Araujo</h1>
       <img src={Avatar} alt="Lucas Araujo" className="avatar" />
-      <p className="title">Desenvolvedor Front End</p>
+      <p className="title">Desenvolvedor Front End<span className="animated-underline">_</span></p>
       <SocialNetworks />  
       <InformationContainer />
-      <a href="https://drive.google.com/drive/folders/1CdsroaJR38yLLZ6RL9P6NWRcWovczU8h?usp=share_link" target="__blank" className="btn">
+      <a href="https://drive.google.com/file/d/1SMCm8zi3sePH9xHXAfZTzBtXVACYZcDP/view?usp=share_link" target="__blank" className="btn">
         Baixar Currículo
       </a>
     </div>
