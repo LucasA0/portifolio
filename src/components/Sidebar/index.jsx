@@ -10,7 +10,7 @@ function Sidebar() {
       <p className="title">Desenvolvedor Front End<span className="animated-underline">_</span></p>
       <SocialNetworks />  
       <InformationContainer />
-      <a href="https://drive.google.com/file/d/1SMCm8zi3sePH9xHXAfZTzBtXVACYZcDP/view?usp=share_link" target="__blank" className="btn">
+      <a href="https://drive.google.com/file/d/1jXerFo7vV_1lXZ7GrQJ9hBuhMENaTEZ6/view?usp=share_link" target="__blank" className="btn">
         Baixar Currículo
       </a>
     </div>
