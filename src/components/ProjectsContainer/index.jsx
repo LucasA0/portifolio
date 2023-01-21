@@ -1,5 +1,5 @@
 import "../../styles/components/projectcontainer.sass";
-import { Projects } from "../../data/ProjectsData";
+import { Projects } from "../../utils/ProjectsData";
 
 function ProjectsContainer() {
   return (

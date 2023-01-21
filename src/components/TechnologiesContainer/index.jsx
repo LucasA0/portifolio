@@ -1,4 +1,4 @@
-import { technologies } from "../../data/TechData";
+import { technologies } from "../../utils/TechData";
 
 import "../../styles/components/technologiescontainer.sass";
 
