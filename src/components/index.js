@@ -1,7 +1,0 @@
-export {default as Sidebar} from './Sidebar'
-export {default as MainContent} from './MainContent'
-export {default as SocialNetworks} from './SocialNetworks'
-export {default as InformationContainer} from './InformationContainer'
-export {default as TechnologiesContainer} from './TechnologiesContainer'
-export {default as AboutContainer} from './AboutContainer'
-export {default as ProjectsContainer} from './ProjectsContainer'
