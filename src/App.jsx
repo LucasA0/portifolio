@@ -1,12 +1,8 @@
-import "./styles/components/app.sass";
-import { Sidebar, MainContent } from "./components/index";
+import './index.css'
 
 function App() {
   return (
-    <div id="portifolio">
-      <Sidebar />
-      <MainContent />
-    </div>
+    <div><h1>Oi</h1></div>
   );
 }
 
