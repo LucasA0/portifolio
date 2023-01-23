@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import useMediaQuery from '../../hooks/useMediaQuery'
 import { Link, pages } from '../../utils/contants';
+import { MenuModal } from '../index'
 
 
 const Navbar = ({selectedPage, setSelectedPage}) => {
@@ -25,9 +26,21 @@ const Navbar = ({selectedPage, setSelectedPage}) => {
 						))}
 					</div>
 				) : (
-					<div>
+					<button
+						className='rounded-full bg-red p-2'
+						onClick={() => setIsMenuToggled(!isMenuToggled)}
+					>
+						<img src="../../../src/assets/menu-icon.svg" alt="icone de menu" />
+					</button>
+				)}
 
-					</div>
+				{/* Mobile Menu PopUp */}
+
+				{!isAboveSmallScreens && isMenuToggled && (
+					<MenuModal
+						isMenuToggled={isMenuToggled}
+						setIsMenuToggled={setIsMenuToggled}
+					/>
 				)}
 			</div>
 		</nav>

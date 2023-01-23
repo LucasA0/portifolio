@@ -30,15 +30,11 @@ export const pages = [
 		value: "Sobre"
 	},
 	{
-		id: "home2",
-		value: "Home2"
+		id: "projetos",
+		value: "Projetos"
 	},
 	{
-		id: "home3",
-		value: "Home3"
+		id: "contato",
+		value: "Contato"
 	},
-	{
-		id: "home",
-		value: "Home4"
-	}
 ]
