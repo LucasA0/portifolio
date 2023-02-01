@@ -1,10 +1,16 @@
+import { Stack } from "@mui/material"
+import { About, Navbar, Projects } from "./components"
 
 function App() {
 
   return (
-    <div className="App">
-      <h1>Oi</h1>
-    </div>
+    <>
+      <Stack direction='row' alignItems='center' justifyContent='space-between'>
+        <Navbar />
+      </Stack>
+      <About />
+      <Projects />
+    </>
   )
 }
 
