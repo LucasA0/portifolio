@@ -9,7 +9,7 @@ export const projectsList = [
     id: 'cryptoNews',
     name: 'CryptoNews',
     link: 'https://cryptoappnews.netlify.app/',
-    thumbnail: '../../src/assets/images/thumbnails/CryptoNews.PNG'
+    thumbnail: '../../src/assets/images/thumbnails/Cryptonews.PNG'
   },
   {
     id: 'ourtube',

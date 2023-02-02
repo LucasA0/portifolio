@@ -1,5 +1,5 @@
 import { Stack, Typography } from "@mui/material"
-import { About, Navbar, Projects } from "./components"
+import { About, Navbar, Projects, Skills } from "./components"
 
 function App() {
 
@@ -16,6 +16,19 @@ function App() {
           PROJETOS
       </Typography>
       <Projects />
+      <Typography mt={8} variant='h2' sx={{
+          fontFamily: 'Playfair Display',
+          fontSize: '36px'
+        }}>
+          SKILLS
+      </Typography>
+      <Skills />
+      <Typography mt={8} variant='h2' sx={{
+          fontFamily: 'Playfair Display',
+          fontSize: '36px'
+        }}>
+          CONTATO
+      </Typography>
     </>
   )
 }

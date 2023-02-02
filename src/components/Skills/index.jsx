@@ -1,9 +1,9 @@
 import { Box, Typography, Stack } from '@mui/material'
 import React, {useState, useEffect, useRef} from 'react'
-import { projectsList } from '../../utils/projects'
+import { technologiesList } from '../../utils/technologies'
 import { motion } from 'framer-motion'
 
-function Projects() {
+function Skills() {
   const carousel = useRef()
   const [width, setWidth] = useState(0)
 
@@ -17,13 +17,14 @@ function Projects() {
       <motion.div className='carousel' ref={carousel} whileTap={{cursor: 'grabbing'}}>
         <motion.div
           className='inner-carousel'
+          style={{width: '3200px'}}
           drag="x"
           dragConstraints={{right: 0, left: -width}}
           initial={{x: 200}}
           animate={{x: 0}}
           transition={{duration: 2}}
         >
-          {projectsList.map((item => (
+          {technologiesList.map((item => (
             <Box key={item.id} sx={{position: 'relative'}}>
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
@@ -54,7 +55,7 @@ function Projects() {
                   fontSize: '20px',
                   cursor: 'pointer'
                 }}>
-                  Demo
+                  Projetos
                 </Typography>
               </Stack>
             </Box>
@@ -65,4 +66,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Skills
