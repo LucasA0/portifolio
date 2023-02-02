@@ -1,6 +1,7 @@
 import { Box, Typography, Stack } from "@mui/material"
 import BigCleanButton from "../../assets/buttons/BigButton/BigCleanButton"
 import { SimpleButton } from "../../assets/buttons/SimpleButton/SimpleButton"
+import { motion } from "framer-motion"
 
 function About() {
   return (

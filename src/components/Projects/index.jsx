@@ -1,38 +1,28 @@
 import { Box, Typography, Stack } from '@mui/material'
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import { projectsList } from '../../utils/projects'
+import { motion } from 'framer-motion'
 
 function Projects() {
-  const [scrollX, setScrollX] = useState(0)
+  const carousel = useRef()
+  const [width, setWidth] = useState(0)
 
-  function handleLeftArrow() {
-    let x = scrollX + Math.round(window.innerWidth / 2)
-    if(x > 0) {
-      x = 0
-    }
+  useEffect(() => {
+    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+  }, [])
 
-    setScrollX(x)
-  }
-
-  function handleRightArrow() {
-    let x = scrollX - 120;
-    if(x < -300) {
-      x = 0
-    }
-    setScrollX(x)
-  }
 
   return (
     <Box mt={4} gap={2} sx={{overflowX: 'hidden'}}>
-      <Box position='relative'>
-        <img src="../../../src/assets/icons/LeftArrow.png" className='leftArrow' onClick={handleLeftArrow} alt="" />
-        <img src="../../../src/assets/icons/RightArrow.png" className='rightArrow' onClick={handleRightArrow} alt="" />
-        <Stack direction='row' pb={4} gap={4} sx={{
-          width: '2360px',
-          height: '345px',
-          marginLeft: scrollX,
-          transition: '0.6s ease-in-out'
-        }}>
+      <motion.div className='carousel' ref={carousel} whileTap={{cursor: 'grabbing'}}>
+        <motion.div
+          className='inner-carousel'
+          drag="x"
+          dragConstraints={{right: 0, left: -width}}
+          initial={{x: 200}}
+          animate={{x: 0}}
+          transition={{duration: 1.8}}
+        >
           {projectsList.map((item => (
             <Box key={item.id} sx={{position: 'relative'}}>
               <img src={item.thumbnail} alt="" />
@@ -69,8 +59,8 @@ function Projects() {
               </Stack>
             </Box>
           )))}
-        </Stack>
-      </Box>
+        </motion.div>
+      </motion.div>
     </Box>
   )
 }
