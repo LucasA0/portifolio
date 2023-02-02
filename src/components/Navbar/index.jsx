@@ -12,15 +12,15 @@ const Navbar = () => {
                 textDecoration: 'underline'
                 }}
             noWrap={true}
-            width='60%'
+            width={{md: '60%', sm: '50%'}}
         >
             LUCAS ARAUJO
         </Typography>
-        <Stack direction='row' width='40%' justifyContent='space-between'>
+        <Stack direction='row' width={{md: '40%', sm: '50%'}} justifyContent='space-between'>
             {menuOptions.map(item => (
             <Typography key={item.id} sx={{
                 fontFamily: 'PlayFair Display',
-                fontWeight: 400, fontSize: '22px',
+                fontWeight: 400, fontSize:{ md: '22px', sm: '18px'},
                 cursor: 'pointer',
                 position: 'relative',
 
