@@ -43,7 +43,7 @@ function About() {
             </Box>
         </Box>
        <Box height={{md: '37.4rem'}} width={{md: '44%', sm: '50%'}}>
-            <motion.img initial={{x: 400}} animate={{x: 0}} transition={{duration: 1}} src="../../../src/assets/images/1674477783595 1.png" alt="" />
+            <motion.img initial={{x: 400}} animate={{x: 0}} transition={{duration: 1}} src="./assets/images/1674477783595 1.png" alt="" />
        </Box>
     </Box>
   )
