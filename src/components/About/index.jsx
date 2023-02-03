@@ -1,6 +1,6 @@
 import { Box, Typography, Stack } from "@mui/material"
-import BigCleanButton from "./public/buttons/BigButton/BigCleanButton"
-import { SimpleButton } from "./public/buttons/SimpleButton/SimpleButton"
+import BigCleanButton from "../../../public/assets/buttons/BigButton/BigCleanButton"
+import { SimpleButton } from "../../../public/assets/buttons/SimpleButton/SimpleButton"
 import { motion } from "framer-motion"
 
 function About() {
@@ -8,6 +8,7 @@ function About() {
     <Box mt={8} display='flex' gap={{md: '20%'}} sx={{
         justifyContent: 'space-between',
         width: '100%',
+        maxWidth: '1600px',
         height: 'auto'
     }}>
         <Box display='flex' flexDirection='column' width='50%' height='auto'>

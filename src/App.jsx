@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material"
+import { Typography, Box } from "@mui/material"
 import { About, Projects, Skills, Navbar, Contact, Footer } from "./components"
 
 
