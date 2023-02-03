@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 function About() {
   return (
-    <Box mt={9} display='flex' gap={{md: '20%'}} sx={{
+    <Box mt={8} display='flex' gap={{md: '20%'}} sx={{
         justifyContent: 'space-between',
         width: '100%',
         height: 'auto'
@@ -41,8 +41,8 @@ function About() {
                 </Stack>
             </Box>
         </Box>
-       <Box height='31.2rem' width='50%'>
-            <img src="../../../src/assets/images/1674477783595 1.png" alt="" />
+       <Box height='31.4rem' width='40%'>
+            <motion.img initial={{x: 400}} animate={{x: 0}} transition={{duration: 1}} src="../../../src/assets/images/1674477783595 1.png" alt="" />
        </Box>
     </Box>
   )

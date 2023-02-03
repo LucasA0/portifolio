@@ -13,6 +13,7 @@ function Navbar() {
                   }}
               noWrap={true}
               width={{md: '60%', sm: '50%'}}
+              id='home'
           >
               LUCAS ARAUJO
           </Typography>
