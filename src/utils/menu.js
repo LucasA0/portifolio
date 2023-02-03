@@ -1,18 +1,22 @@
 export const menuOptions = [
     {
         id: 'home',
-        name: 'HOME'
+        name: 'HOME',
+        href: 'home'
     },
     {
         id: 'projetos',
-        name: 'PROJETOS'
+        name: 'PROJETOS',
+        href: 'projetos'
     },
     {
         id: 'skills',
-        name: 'SKILLS'
+        name: 'SKILLS',
+        href: 'skills'
     },
     {
         id: 'contato',
-        name: 'CONTATO'
+        name: 'CONTATO',
+        href: 'contato'
     }
 ]

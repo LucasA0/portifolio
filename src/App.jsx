@@ -1,34 +1,47 @@
-import { Stack, Typography } from "@mui/material"
-import { About, Navbar, Projects, Skills } from "./components"
+import { Typography } from "@mui/material"
+import { About, Projects, Skills, Navbar } from "./components"
+
 
 function App() {
 
   return (
     <>
-      <Stack direction='row' alignItems='center' justifyContent='space-between'>
-        <Navbar />
-      </Stack>
+      <Navbar />
+
       <About />
+
       <Typography mt={8} variant='h2' sx={{
           fontFamily: 'Playfair Display',
           fontSize: '36px'
-        }}>
+        }}
+        id='projetos'
+      >
           PROJETOS
       </Typography>
+
       <Projects />
+
       <Typography mt={8} variant='h2' sx={{
           fontFamily: 'Playfair Display',
           fontSize: '36px'
-        }}>
+        }}
+        id='skills'
+      >
           SKILLS
       </Typography>
+
       <Skills />
+
       <Typography mt={8} variant='h2' sx={{
           fontFamily: 'Playfair Display',
           fontSize: '36px'
-        }}>
+        }}
+        id='contato'
+      >
           CONTATO
       </Typography>
+
+
     </>
   )
 }

@@ -22,6 +22,11 @@ img {
   pointer-events: none;
 }
 
+a {
+  text-decoration: none;
+  color: #fff
+}
+
 .simpleButton {
   position: relative;
   font-family: 'Poppins';
@@ -83,3 +88,5 @@ img {
   width: 100%;
   height: 100%;
 }
+
+

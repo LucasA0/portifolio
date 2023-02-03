@@ -48,15 +48,17 @@ function Skills() {
                 }}>
                   {item.name}
                 </Typography>
-                <Typography variant='h5' sx={{
-                  border: '1px solid #fff',
-                  padding: '5px 40px',
-                  fontFamily: 'Playfair Display',
-                  fontSize: '20px',
-                  cursor: 'pointer'
-                }}>
-                  Projetos
-                </Typography>
+                <a href={item.link} target='__blank' style={{textDecoration: 'none', color: '#fff'}}>
+                  <Typography variant='h5' sx={{
+                    border: '1px solid #fff',
+                    padding: '5px 40px',
+                    fontFamily: 'Playfair Display',
+                    fontSize: '20px',
+                    cursor: 'pointer'
+                  }}>
+                    Projetos
+                  </Typography>
+                </a>
               </Stack>
             </Box>
           )))}
