@@ -1,13 +1,51 @@
-import "./styles/components/app.sass";
-import { Sidebar, MainContent } from "./components/index";
+import { Typography } from "@mui/material"
+import { About, Projects, Skills, Navbar, Contact, Footer } from "./components"
+
 
 function App() {
+
   return (
-    <div id="portifolio">
-      <Sidebar />
-      <MainContent />
-    </div>
-  );
+    <>
+      <Navbar />
+
+      <About />
+
+      <Typography mt={8} variant='h2' sx={{
+          fontFamily: 'Playfair Display',
+          fontSize: '36px'
+        }}
+        id='projetos'
+      >
+          PROJETOS
+      </Typography>
+
+      <Projects />
+
+      <Typography mt={8} variant='h2' sx={{
+          fontFamily: 'Playfair Display',
+          fontSize: '36px'
+        }}
+        id='skills'
+      >
+          SKILLS
+      </Typography>
+
+      <Skills />
+
+      <Typography mt={8} variant='h2' sx={{
+          fontFamily: 'Playfair Display',
+          fontSize: '36px'
+        }}
+        id='contato'
+      >
+          CONTATO
+      </Typography>
+
+      <Contact />
+
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
