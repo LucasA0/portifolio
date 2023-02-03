@@ -2,7 +2,6 @@ import { Stack, Typography } from "@mui/material"
 import { menuOptions } from '../../utils/menu'
 import { Link } from "react-scroll"
 
-
 function Navbar() {
   return(
     <Stack direction='row' alignItems='center' justifyContent='space-between'>

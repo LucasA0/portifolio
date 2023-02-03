@@ -13,7 +13,7 @@ function Projects() {
 
 
   return (
-    <Box mt={4} gap={2} sx={{overflowX: 'hidden'}}>
+    <Box mt={8} gap={2} sx={{overflowX: 'hidden'}}>
       <motion.div className='carousel' ref={carousel} whileTap={{cursor: 'grabbing'}}>
         <motion.div
           className='inner-carousel'

@@ -13,7 +13,7 @@ function Skills() {
 
 
   return (
-    <Box mt={4} gap={2} sx={{overflowX: 'hidden'}}>
+    <Box mt={8} gap={2} sx={{overflowX: 'hidden'}}>
       <motion.div className='carousel' ref={carousel} whileTap={{cursor: 'grabbing'}}>
         <motion.div
           className='inner-carousel'
@@ -48,7 +48,7 @@ function Skills() {
                 }}>
                   {item.name}
                 </Typography>
-                <a href={item.link} target='__blank' style={{textDecoration: 'none', color: '#fff'}}>
+                <a href={item.link} target='__blank'>
                   <Typography variant='h5' sx={{
                     border: '1px solid #fff',
                     padding: '5px 40px',

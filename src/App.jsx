@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material"
-import { About, Projects, Skills, Navbar } from "./components"
+import { About, Projects, Skills, Navbar, Contact } from "./components"
 
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
           CONTATO
       </Typography>
 
-
+      <Contact />
     </>
   )
 }

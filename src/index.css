@@ -27,6 +27,54 @@ a {
   color: #fff
 }
 
+form {
+  width: 45%;
+  height: 100%;
+}
+
+.input-mail, .input-name, .input-tel, .input-subject, .button-submit {
+  height: 50px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: white;
+  border-radius: 4px;
+  background: none;
+  border: 1px solid #fff;
+  outline: none;
+  position: relative;
+}
+
+.input-name {
+  width: 50%;
+}
+
+.input-tel {
+  width: 45%;
+}
+
+.input-message {
+  height: 100px;
+  padding: 10px;
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: white;
+  border-radius: 4px;
+  background: none;
+  border: 1px solid #fff;
+  outline: none;
+  position: relative;
+}
+
+.button-submit {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button-submit:hover {
+  background: #3b3b3b9c;
+}
+
 .simpleButton {
   position: relative;
   font-family: 'Poppins';
