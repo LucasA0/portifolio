@@ -8,8 +8,8 @@ function Contact() {
       <Stack direction='row' justifyContent='space-between' flexWrap='wrap'>
         <Stack gap={5.2}>
           {socialsList.map(social => (
-            <a href={social?.link} target='__blank'>
-              <Stack direction='row' key={social.id} alignItems='center' gap={3}>
+            <a href={social?.link} key={social.id} target='__blank'>
+              <Stack direction='row' alignItems='center' gap={3}>
                 <img src={social.thumbnail} style={{width: '50px', height: '50px'}}/>
 
                 <Typography sx={{fontFamily: 'Poppins', fontSize: '20px'}}>

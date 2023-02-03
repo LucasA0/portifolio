@@ -8,7 +8,8 @@ function Navbar() {
         <Typography
               sx={{
                   fontFamily: 'PlayFair Display',
-                  fontWeight: 400, fontSize: '30px',
+                  fontWeight: 400,
+                  fontSize: {md: '30px', sm: '24px'},
                   textDecoration: 'underline'
                   }}
               noWrap={true}
@@ -17,18 +18,19 @@ function Navbar() {
           >
               LUCAS ARAUJO
           </Typography>
-          <Stack direction='row' width={{md: '40%', sm: '50%'}} justifyContent='space-between'>
+          <Stack direction='row' width={{md: '40%', sm: '70%'}} justifyContent='space-between'>
               {menuOptions.map(item => (
                 <Link
                   to={item.href}
                   smooth={true}
                   offset={0}
                   duration={700}
+                  key={item.id}
                 >
-                  <Typography key={item.id} sx={{
+                  <Typography sx={{
                     fontFamily: 'Playfair Display',
                     fontWeight: 400,
-                    fontSize:{ md: '22px', sm: '18px'},
+                    fontSize:{ md: '22px', sm: '22px'},
                     cursor: 'pointer',
                     position: 'relative',
 

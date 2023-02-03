@@ -14,7 +14,7 @@ function About() {
             <Typography variant="h3"
                 sx={{fontFamily: 'Playfair Display',
                 width: '100%',
-                fontSize: '3rem',
+                fontSize: {md: '48px', sm: '30px'},
                 fontWeight: '400',
                 }}
             >
@@ -25,8 +25,9 @@ function About() {
                 sx={{
                     fontFamily: 'poppins',
                     color: '#878686',
-                    width: '80%',
-                    mt: '1.8rem'
+                    width: '82%',
+                    mt: '2rem',
+                    fontSize: {md: '20px', sm: '15px'}
                 }}
             >
                 Venho estudando há 8 meses e sinto a cada projeto concluído que a profissão de desenvolvedor
@@ -41,7 +42,7 @@ function About() {
                 </Stack>
             </Box>
         </Box>
-       <Box height='31.4rem' width='40%'>
+       <Box height={{md: '37.4rem'}} width={{md: '44%', sm: '50%'}}>
             <motion.img initial={{x: 400}} animate={{x: 0}} transition={{duration: 1}} src="../../../src/assets/images/1674477783595 1.png" alt="" />
        </Box>
     </Box>
