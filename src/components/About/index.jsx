@@ -57,7 +57,7 @@ function About() {
             </Box>
         </Box>
        <Box height={{md: 'auto'}} width={{md: '60%', sm: '50%'}}>
-            <img data-aos="flip-right" className="main-image" data-aos-duration="2000" src="../../../public/assets/images/Lucas Araujo.jpeg" alt="foto de perfil" />
+            <img data-aos="flip-right" className="main-image" data-aos-duration="2000" src="./assets/images/Lucas Araujo.jpeg" alt="foto de perfil" />
        </Box>
     </Box>
   )
