@@ -26,21 +26,14 @@ function Skills() {
           dragConstraints={{right: 0, left: -width}}
         >
           {technologiesList.map((item => (
-            <Box key={item.id} sx={{position: 'relative'}} data-aos="flip-right" data-aos-duration="2000">
+            <Box key={item.id} sx={{position: 'relative'}} data-aos="flip-left" data-aos-duration="2000">
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',
-                bottom: '25px',
-                left: '17.5px',
+                bottom: '5px',
+                left: '0',
                 padding: '20px',
-                width: '90%',
-                background: 'rgba(53, 53, 53, 0.4)',
-                borderRadius: '4px',
-                transition: '0.3s',
-
-                ':hover': {
-                  background: 'rgba(53, 53, 53, 0.8)'
-                }
+                width: '100%',
 
                 }}>
                 <Typography variant='h4' sx={{
@@ -52,8 +45,6 @@ function Skills() {
                 </Typography>
                 <a href={item.link} target='__blank'>
                   <Typography variant='h5' sx={{
-                    border: '1px solid #fff',
-                    padding: '5px 40px',
                     fontFamily: 'Playfair Display',
                     fontSize: '20px',
                     cursor: 'pointer'

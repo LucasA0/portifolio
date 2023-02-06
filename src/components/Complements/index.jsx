@@ -17,11 +17,11 @@ function Complements() {
   }, [])
 
   return (
-    <Box mt={8} gap={2} sx={{overflowX: 'hidden'}}>
+    <Box mt={8} sx={{overflowX: 'hidden'}}>
       <motion.div className='carousel' ref={carousel} whileTap={{cursor: 'grabbing'}}>
         <motion.div
           className='inner-carousel'
-          style={{width: '2500px', height: '400px'}}
+          style={{width: '2600px', height: '400px'}}
           drag="x"
           dragConstraints={{right: 0, left: -width}}
         >
@@ -30,29 +30,20 @@ function Complements() {
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',
-                bottom: '30px',
-                left: '19px',
-                padding: '20px',
-                width: '90%',
-                background: 'rgba(53, 53, 53, 0.4)',
-                borderRadius: '4px',
-                transition: '0.3s',
-
-                ':hover': {
-                  background: 'rgba(53, 53, 53, 0.8)'
-                }
+                bottom: '5px',
+                paddingY: '20px',
+                width: '100%',
 
                 }}>
                 <Typography variant='h4' sx={{
                   fontFamily: 'Playfair Display',
+                  letterSpacing: '2px',
                   fontSize: '20px'
                 }}>
                   {item.name}
                 </Typography>
                 <a href={item.link} target='__blank'>
                   <Typography variant='h5' sx={{
-                    border: '1px solid #fff',
-                    padding: '5px 40px',
                     fontFamily: 'Playfair Display',
                     fontSize: '20px',
                     cursor: 'pointer'
