@@ -18,7 +18,7 @@ function Navbar() {
           >
               LUCAS ARAUJO
           </Typography>
-          <Stack direction='row' width={{md: '40%', sm: '70%'}} justifyContent='space-between'>
+          <Stack direction='row' width={{md: '41%', sm: '70%'}} justifyContent='space-between'>
               {menuOptions.map(item => (
                 <Link
                   to={item.href}
