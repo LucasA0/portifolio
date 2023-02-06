@@ -2,6 +2,7 @@ import { Box, Typography, Stack } from '@mui/material'
 import React, {useState, useEffect, useRef} from 'react'
 import { technologiesList } from '../../utils/technologies'
 import { motion } from 'framer-motion'
+import AOS from 'aos';
 
 function Skills() {
   const carousel = useRef()
@@ -11,6 +12,9 @@ function Skills() {
     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
   }, [])
 
+  useEffect(() => {
+    AOS.init({duration: 2500})
+  }, [])
 
   return (
     <Box mt={8} gap={2} sx={{overflowX: 'hidden'}}>
@@ -25,7 +29,7 @@ function Skills() {
           transition={{duration: 2}}
         >
           {technologiesList.map((item => (
-            <Box key={item.id} sx={{position: 'relative'}}>
+            <Box key={item.id} sx={{position: 'relative'}} data-aos="flip-right">
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',

@@ -2,6 +2,7 @@ import { Box, Typography, Stack } from '@mui/material'
 import React, {useState, useEffect, useRef} from 'react'
 import { complementsList } from '../../utils/complements'
 import { motion } from 'framer-motion'
+import AOS from 'aos';
 
 function Complements() {
   const carousel = useRef()
@@ -11,6 +12,9 @@ function Complements() {
     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
   }, [])
 
+  useEffect(() => {
+    AOS.init({duration: 2500})
+  }, [])
 
   return (
     <Box mt={8} gap={2} sx={{overflowX: 'hidden'}}>
@@ -25,7 +29,7 @@ function Complements() {
           transition={{duration: 2}}
         >
           {complementsList.map((item => (
-            <Box key={item.id} sx={{position: 'relative'}}>
+            <Box key={item.id} sx={{position: 'relative', overflowY: 'hidden'}} data-aos="flip-right">
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',
