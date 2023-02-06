@@ -14,7 +14,7 @@
 
 ### :camera: Aqui vai um preview do app
 
-![image](https://user-images.githubusercontent.com/104575967/203794761-81bb0905-c3a1-4e74-85ac-eba1cc11dccf.png)
+![image](https://user-images.githubusercontent.com/104575967/216727576-ef7c8398-bae6-4cc0-a5b4-658cb5d424e8.png)
 
 ---
 
@@ -22,4 +22,4 @@
 
 ### Aparelhos smartphone ainda não possuem suporte, em breve será adicionado!
 
-### Aqui vai o link para visualização:
+### Aqui vai o link para visualização: https://lucas-araujo.netlify.app/
