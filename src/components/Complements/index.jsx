@@ -1,9 +1,9 @@
 import { Box, Typography, Stack } from '@mui/material'
 import React, {useState, useEffect, useRef} from 'react'
-import { technologiesList } from '../../utils/technologies'
+import { complementsList } from '../../utils/complements'
 import { motion } from 'framer-motion'
 
-function Skills() {
+function Complements() {
   const carousel = useRef()
   const [width, setWidth] = useState(0)
 
@@ -24,7 +24,7 @@ function Skills() {
           animate={{x: 0}}
           transition={{duration: 2}}
         >
-          {technologiesList.map((item => (
+          {complementsList.map((item => (
             <Box key={item.id} sx={{position: 'relative'}}>
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
@@ -68,4 +68,4 @@ function Skills() {
   )
 }
 
-export default Skills
+export default Complements
