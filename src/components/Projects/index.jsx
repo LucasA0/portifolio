@@ -2,6 +2,7 @@ import { Box, Typography, Stack } from '@mui/material'
 import React, {useState, useEffect, useRef} from 'react'
 import { projectsList } from '../../utils/projects'
 import { motion } from 'framer-motion'
+import AOS from 'aos'
 
 function Projects() {
   const carousel = useRef()
@@ -11,20 +12,21 @@ function Projects() {
     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
   }, [])
 
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   return (
-    <Box mt={8} gap={2} sx={{overflowX: 'hidden'}}>
+    <Box mt={8} sx={{overflowX: 'hidden'}}>
       <motion.div className='carousel' ref={carousel} whileTap={{cursor: 'grabbing'}}>
         <motion.div
           className='inner-carousel'
           drag="x"
+          style={{width: '2600px', height: '400px'}}
           dragConstraints={{right: 0, left: -width}}
-          initial={{x: 200}}
-          animate={{x: 0}}
-          transition={{duration: 2}}
         >
           {projectsList.map((item => (
-            <Box key={item.id} sx={{position: 'relative'}}>
+            <Box key={item.id} sx={{position: 'relative', boxShadow: '4px 4px 10px black'}} data-aos="flip-left" data-aos-duration="2000">
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',

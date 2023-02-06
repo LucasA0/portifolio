@@ -3,6 +3,7 @@ export const socialsList = [
     id: 'whatsapp',
     name: 'Whatsapp',
     thumbnail: './assets/icons/socials/WhatsApp_white.png',
+    link: 'https://api.whatsapp.com/send/?phone=21993586894&text&type=phone_number&app_absent=0',
     target: '(21) 99358-6894'
   },
   {

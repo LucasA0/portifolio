@@ -31,7 +31,7 @@ function Form() {
       setName('')
       setEmail('')
       setMessage('')
-    }, 4000)
+    }, 2500)
   }
 
   return (

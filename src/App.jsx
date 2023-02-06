@@ -1,11 +1,17 @@
-import { Typography } from "@mui/material"
-import { About, Projects, Skills, Navbar, Contact, Footer } from "./components"
-
+import { Typography, Container } from "@mui/material"
+import { useEffect } from "react"
+import { About, Projects, Skills, Navbar, Contact, Footer, Complements } from "./components"
+import AOS from "aos"
+import 'aos/dist/aos.css'
 
 function App() {
 
+  useEffect(() => {
+    AOS.init({duration: 2500});
+  }, [])
+
   return (
-    <>
+    <Container sx={{pt: 3, mx: 'auto'}}>
       <Navbar />
 
       <About />
@@ -27,10 +33,21 @@ function App() {
         }}
         id='skills'
       >
-          SKILLS
+          TECNOLOGIAS
       </Typography>
 
       <Skills />
+
+      <Typography mt={8} variant='h2' sx={{
+          fontFamily: 'Playfair Display',
+          fontSize: '36px'
+        }}
+        id='skills'
+      >
+        COMPLEMENTOS
+      </Typography>
+
+      <Complements />
 
       <Typography mt={8} variant='h2' sx={{
           fontFamily: 'Playfair Display',
@@ -44,7 +61,7 @@ function App() {
       <Contact />
 
       <Footer />
-    </>
+    </Container>
   )
 }
 

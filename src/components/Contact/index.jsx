@@ -5,8 +5,8 @@ import { Form } from '../index'
 function Contact() {
   return (
     <Box mt={8}>
-      <Stack direction='row' justifyContent='space-between' flexWrap='wrap'>
-        <Stack gap={5.2}>
+      <Stack direction='row' width='100%' justifyContent='space-between' flexWrap='wrap'>
+        <Stack gap={5} width='50%'>
           {socialsList.map(social => (
             <a href={social?.link} key={social.id} target='__blank'>
               <Stack direction='row' alignItems='center' gap={3}>
