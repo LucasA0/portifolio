@@ -5,11 +5,11 @@ import AOS from 'aos'
 export const SimpleButton = () => {
 
   useEffect(() => {
-    AOS.init({duration: 2500})
+    AOS.init()
   }, [])
 
   return (
-        <button className='simpleButton' data-aos="fade-right">
+        <button className='simpleButton' data-aos="fade-right" data-aos-duration="2000">
           <a href="https://github.com/LucasA0?tab=repositories" target='__blank'>
            Meus Projetos
           </a>

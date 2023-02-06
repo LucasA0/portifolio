@@ -13,7 +13,7 @@ function Skills() {
   }, [])
 
   useEffect(() => {
-    AOS.init({duration: 2500})
+    AOS.init()
   }, [])
 
   return (
@@ -21,22 +21,19 @@ function Skills() {
       <motion.div className='carousel' ref={carousel} whileTap={{cursor: 'grabbing'}}>
         <motion.div
           className='inner-carousel'
-          style={{width: '2600px'}}
+          style={{width: '3000px', height: '400px'}}
           drag="x"
           dragConstraints={{right: 0, left: -width}}
-          initial={{x: 200}}
-          animate={{x: 0}}
-          transition={{duration: 2}}
         >
           {technologiesList.map((item => (
-            <Box key={item.id} sx={{position: 'relative'}} data-aos="flip-right">
+            <Box key={item.id} sx={{position: 'relative'}} data-aos="flip-right" data-aos-duration="2000">
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',
-                bottom: '10px',
-                left: '10px',
+                bottom: '25px',
+                left: '17.5px',
                 padding: '20px',
-                width: '95%',
+                width: '90%',
                 background: 'rgba(53, 53, 53, 0.4)',
                 borderRadius: '4px',
                 transition: '0.3s',
@@ -48,6 +45,7 @@ function Skills() {
                 }}>
                 <Typography variant='h4' sx={{
                   fontFamily: 'Playfair Display',
+                  letterSpacing: '2px',
                   fontSize: '20px'
                 }}>
                   {item.name}

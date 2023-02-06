@@ -29,11 +29,4 @@ export const complementsList = [
     thumbnail: './public/assets/images/thumbnails/tech/MaterialUi.png',
     link: 'https://github.com/LucasA0?tab=repositories'
   },
-  {
-    id: 'bootstrap',
-    name: 'BootStrap',
-    thumbnail: './public/assets/images/thumbnails/tech/BootStrap.png',
-    link: 'https://github.com/LucasA0?tab=repositories'
-  },
-
 ]

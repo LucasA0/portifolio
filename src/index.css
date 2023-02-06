@@ -32,7 +32,7 @@ form {
 .input-mail, .input-name, .input-tel, .input-subject, .button-submit {
   width: 100%;
   height: 50px;
-  text-align: center;
+  padding: 10px;
   font-family: 'Poppins';
   font-size: 20px;
   color: white;
@@ -60,6 +60,7 @@ form {
 .button-submit {
   cursor: pointer;
   transition: 0.4s;
+  width: 35%;
 }
 
 .button-submit:hover {
@@ -75,7 +76,6 @@ form {
   outline: none;
   color: #fff;
   cursor: pointer;
-  transition: all 0.4s;
 }
 
 .simpleButtonArrow {
@@ -87,10 +87,6 @@ form {
   padding-left: 6px;
 }
 
-.simpleButton:hover{
-  padding-left: 3px;
-}
-
 .bigCleanButton {
   background: none;
   border: 1px solid #fff;
@@ -100,7 +96,6 @@ form {
   font-family: 'Poppins';
   cursor: pointer;
   font-size: 20px;
-  transition: all 0.4s;
   border-radius: 2px;
 }
 

@@ -13,7 +13,7 @@ function Complements() {
   }, [])
 
   useEffect(() => {
-    AOS.init({duration: 2500})
+    AOS.init()
   }, [])
 
   return (
@@ -21,15 +21,12 @@ function Complements() {
       <motion.div className='carousel' ref={carousel} whileTap={{cursor: 'grabbing'}}>
         <motion.div
           className='inner-carousel'
-          style={{width: '2600px'}}
+          style={{width: '2500px', height: '400px'}}
           drag="x"
           dragConstraints={{right: 0, left: -width}}
-          initial={{x: 200}}
-          animate={{x: 0}}
-          transition={{duration: 2}}
         >
           {complementsList.map((item => (
-            <Box key={item.id} sx={{position: 'relative', overflowY: 'hidden'}} data-aos="flip-right">
+            <Box key={item.id} sx={{position: 'relative', overflowY: 'hidden'}} data-aos="flip-left" data-aos-duration="2000">
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',
