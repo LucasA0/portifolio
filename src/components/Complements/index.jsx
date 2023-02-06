@@ -30,10 +30,10 @@ function Complements() {
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',
-                bottom: '10px',
-                left: '10px',
+                bottom: '30px',
+                left: '19px',
                 padding: '20px',
-                width: '95%',
+                width: '90%',
                 background: 'rgba(53, 53, 53, 0.4)',
                 borderRadius: '4px',
                 transition: '0.3s',
