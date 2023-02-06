@@ -18,7 +18,7 @@ function Navbar() {
           >
               LUCAS ARAUJO
           </Typography>
-          <Stack direction='row' width={{md: '41%', sm: '70%'}} justifyContent='space-between'>
+          <Stack direction='row' width={{md: '41%', sm: '46%'}} justifyContent='space-between'>
               {menuOptions.map(item => (
                 <Link
                   to={item.href}
@@ -30,7 +30,7 @@ function Navbar() {
                   <Typography sx={{
                     fontFamily: 'Playfair Display',
                     fontWeight: 400,
-                    fontSize:{ md: '22px', sm: '22px'},
+                    fontSize:{ md: '22px', sm: '18px'},
                     cursor: 'pointer',
                     position: 'relative',
 

@@ -26,7 +26,7 @@ function Complements() {
           dragConstraints={{right: 0, left: -width}}
         >
           {complementsList.map((item => (
-            <Box key={item.id} sx={{position: 'relative', overflowY: 'hidden'}} data-aos="flip-left" data-aos-duration="2000">
+            <Box key={item.id} sx={{position: 'relative'}} data-aos="flip-left" data-aos-duration="2000">
               <img src={item.thumbnail} alt="" />
               <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 position: 'absolute',

@@ -21,7 +21,7 @@ function About() {
             <Typography variant="h3"
                 sx={{fontFamily: 'Playfair Display',
                 width: '100%',
-                fontSize: {md: '52px', sm: '30px'},
+                fontSize: {md: '52px', sm: '33px'},
                 fontWeight: '400',
                 }}
 
@@ -36,9 +36,9 @@ function About() {
                     fontFamily: 'poppins',
                     opacity: '0.7',
                     color: '#828686',
-                    width: '95%',
+                    width: {md: '95%', sm: '85%'},
                     mt: '2rem',
-                    fontSize: {md: '20px', sm: '14px'},
+                    fontSize: {md: '20px', sm: '18px'},
                     lineHeight: '26px'
                 }}
 
@@ -57,7 +57,7 @@ function About() {
             </Box>
         </Box>
        <Box height={{md: 'auto'}} width={{md: '60%', sm: '50%'}}>
-            <img data-aos="flip-right" data-aos-duration="2000" src="../../../public/assets/images/Lucas Araujo.jpeg" alt="foto de perfil" />
+            <img data-aos="flip-right" className="main-image" data-aos-duration="2000" src="../../../public/assets/images/Lucas Araujo.jpeg" alt="foto de perfil" />
        </Box>
     </Box>
   )

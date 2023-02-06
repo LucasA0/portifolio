@@ -81,7 +81,7 @@ function Footer() {
 
         <Typography sx={{
             fontFamily: 'Playfair Display',
-            fontSize: '20px',
+            fontSize: {md: '20px', sm: '16px'},
             fontWeight: '500',
             opacity: '0.5',
             width: {md: '75%', sm: '100%'}
