@@ -42,16 +42,4 @@ export const technologiesList = [
     thumbnail: './assets/images/thumbnails/tech/CSS.png',
     link: 'https://github.com/LucasA0?tab=repositories'
   },
-  {
-    id: 'sass',
-    name: 'SASS',
-    thumbnail: './assets/images/thumbnails/tech/Sass.png',
-    link: 'https://github.com/LucasA0?tab=repositories'
-  },
-  {
-    id: 'jest',
-    name: 'JEST',
-    thumbnail: './assets/images/thumbnails/tech/Jest.png',
-    link: 'https://github.com/LucasA0?tab=repositories'
-  },
 ]
