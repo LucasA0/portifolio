@@ -20,6 +20,6 @@
 
 ### O site passou por uma nova fase de desenvolvimento onde ainda precisa ser finalizada a parte de responsividade!
 
-### Aparelhos smartphone ainda não possuem suporte, em breve será adicionado!
+### O esforço no trabalho de responsividade do site para smartphones será iniciada amanhã dia: 08/02/2023
 
 ### Aqui vai o link para visualização: https://lucas-araujo.netlify.app/
