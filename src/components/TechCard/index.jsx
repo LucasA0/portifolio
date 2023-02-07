@@ -2,7 +2,7 @@ import { Card, CardMedia, CardContent, Typography, Stack } from "@mui/material"
 import AOS from 'aos'
 import { useEffect } from "react"
 
-function TechCard({name, thumb}) {
+function TechCard({name, thumb, about}) {
 
   useEffect(() => {
     AOS.init()
@@ -14,7 +14,7 @@ function TechCard({name, thumb}) {
         background: 'none',
         border: '2px solid white',
         width: {md: '360px', sm: '340px'},
-        height: '200px'
+        height: '180px'
       }}
       data-aos="flip-left"
     >
@@ -25,7 +25,7 @@ function TechCard({name, thumb}) {
           justifyContent: 'space-between'
         }}
       >
-        <Stack>
+        <Stack width='40%' gap={2}>
           <Typography
             sx={{
               fontFamily: 'Poppins',
@@ -35,13 +35,22 @@ function TechCard({name, thumb}) {
           >
             {name}
           </Typography>
+          <Typography
+            sx={{
+              fontFamily: 'Poppins',
+              fontSize: '14px',
+              width: '200px',
+              color: '#5F5F5F',
+            }}
+          >
+            {about}
+          </Typography>
         </Stack>
         <CardMedia
           image={thumb}
           sx={{
             height: '100px',
             width: '100px',
-            boxShadow: '0px 0px 5px white'
           }}
         />
 

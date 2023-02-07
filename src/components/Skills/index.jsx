@@ -31,6 +31,7 @@ function Skills() {
             name={tech.name}
             thumb={tech.thumbnail}
             key={tech.id}
+            about={tech.about}
           />
         ))}
       </Box>
