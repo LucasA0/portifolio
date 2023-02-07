@@ -14,7 +14,7 @@ function TechCard({name, thumb, about}) {
         background: 'none',
         border: '2px solid white',
         width: {md: '360px', sm: '340px'},
-        height: '180px'
+        height: '150px'
       }}
       data-aos="flip-left"
     >
