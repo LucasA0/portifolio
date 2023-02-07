@@ -27,25 +27,7 @@ function App() {
 
       <Projects />
 
-      <Typography mt={8} variant='h2' sx={{
-          fontFamily: 'Playfair Display',
-          fontSize: '36px'
-        }}
-        id='skills'
-      >
-          TECNOLOGIAS
-      </Typography>
-
       <Skills />
-
-      <Typography mt={8} variant='h2' sx={{
-          fontFamily: 'Playfair Display',
-          fontSize: '36px'
-        }}
-        id='skills'
-      >
-        COMPLEMENTOS
-      </Typography>
 
       <Complements />
 
