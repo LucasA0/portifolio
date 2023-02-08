@@ -47,7 +47,7 @@ function Navbar() {
             isMobile
             ?
             (<img
-                src="../../../public/assets/icons/mobileMenu.png"
+                src="./assets/icons/mobileMenu.png"
                 onClick={handleIsMenuOpen}
                 alt="icone de menu hamburguer"
                 className="mobile-menu"
