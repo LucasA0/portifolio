@@ -13,7 +13,7 @@ function TechCard({name, thumb, about}) {
       sx={{
         background: 'none',
         border: '2px solid white',
-        width: {md: '360px', sm: '340px'},
+        width: {md: '360px', sm: '340px', xs: '350px'},
         height: '150px'
       }}
       data-aos="flip-left"

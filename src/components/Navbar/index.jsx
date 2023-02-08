@@ -15,7 +15,7 @@ function Navbar() {
   }, [window.innerWidth])
 
   const handleMobileMenu = () => {
-    if(window.innerWidth > 415) {
+    if(window.innerWidth > 541) {
       setIsMobile(false)
     } else {
       setIsMobile(true)

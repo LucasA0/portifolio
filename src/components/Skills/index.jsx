@@ -21,7 +21,7 @@ function Skills() {
           display: 'flex',
           alignItems: 'center',
           flexWrap: 'wrap',
-          gap: {md: '35px', sm: '0px'},
+          gap: {md: '35px', sm: '0px', xs: '30px'},
           rowGap: {sm: '40px'},
           justifyContent: {sm: 'space-between'}
         }}
