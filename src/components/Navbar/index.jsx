@@ -5,6 +5,7 @@ import { Link } from "react-scroll"
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     window.addEventListener('resize', handleMobileMenu)
@@ -20,6 +21,11 @@ function Navbar() {
     } else {
       setIsMobile(true)
     }
+  }
+
+  const handleIsMenuOpen = () => {
+    console.log(isMenuOpen)
+    setIsMenuOpen(!isMenuOpen)
   }
 
   return(
@@ -40,7 +46,12 @@ function Navbar() {
           {
             isMobile
             ?
-            (<img src="../../../public/assets/icons/mobileMenu.png" alt="icone de menu hamburguer" className="mobile-menu"/>)
+            (<img
+                src="../../../public/assets/icons/mobileMenu.png"
+                onClick={handleIsMenuOpen}
+                alt="icone de menu hamburguer"
+                className="mobile-menu"
+              />)
             :
             (<Stack direction='row' width={{md: '41%', sm: '46%'}} justifyContent='space-between'>
             {menuOptions.map(item => (
