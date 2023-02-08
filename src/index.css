@@ -134,6 +134,11 @@ form {
   text-decoration: 'underline'
 }
 
+.mobile-menu {
+  width: 40px;
+  height: 40px;
+}
+
 
 @media screen and (max-width: 820px) {
   .bigCleanButton {
@@ -143,5 +148,20 @@ form {
 
   .simpleButton {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bigCleanButton {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .simpleButton {
+    font-size: 16px;
+  }
+
+  .simpleButtonArrow {
+    width: 0;
   }
 }

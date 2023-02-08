@@ -5,7 +5,7 @@ import { useEffect, useState} from "react"
 import AOS from 'aos'
 
 function About() {
-  const [isDesktop, setIsDesktop] = useState(true)
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
     window.addEventListener('resize', handleResize)
@@ -41,13 +41,13 @@ function About() {
           height='auto'
           sx={{
             width: {md: '60%', sm: '100%'},
-            marginBottom: {sm: '40px', md: '0px'}
+            marginBottom: {xs: '40px', sm: '40px', md: '0px'}
           }}
         >
             <Typography variant="h3"
                 sx={{fontFamily: 'Playfair Display',
                 width: '98%',
-                fontSize: {md: '52px', sm: '50px'},
+                fontSize: {md: '52px', sm: '50px', xs: '40px'},
                 fontWeight: '400',
                 }}
 
@@ -62,9 +62,9 @@ function About() {
                     fontFamily: 'poppins',
                     opacity: '0.5',
                     color: '#808080',
-                    width: {md: '95%', sm: '95%'},
+                    width: {md: '95%', sm: '95%', xs: '94%'},
                     mt: '37px',
-                    fontSize: {md: '20px', sm: '24px'},
+                    fontSize: {md: '20px', sm: '24px', xs: '18px'},
                     lineHeight: {md: '26px', sm: '35px'}
                 }}
 
