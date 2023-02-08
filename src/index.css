@@ -30,7 +30,7 @@ a {
 }
 
 form {
-  width: 45%;
+  width: 50%;
   height: 100%;
 }
 
@@ -163,5 +163,9 @@ form {
 
   .simpleButtonArrow {
     width: 0;
+  }
+
+  form {
+    width: 100%;
   }
 }

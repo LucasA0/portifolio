@@ -36,7 +36,7 @@ function Form() {
 
   return (
     <form action="" onSubmit={sendEmail}>
-      <Stack gap={3.5}>
+      <Stack gap={3.5} width={{xs: '100%'}}>
         <Stack direction='row' justifyContent='space-between' position='relative'>
 
           <input
