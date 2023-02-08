@@ -6,30 +6,34 @@ import { Link } from 'react-scroll'
 function Footer() {
   return (
     <Box
-      mt={8}
-      sx={{background: '#1c1c1c', height: {md: '250px', sm: '300px'}}}
+      mt={5}
+      sx={{
+        background: '#1c1c1c',
+        height: {md: '250px', sm: '300px', xs: '260px'},
+        flexWrap: {md: 'nowrap', sm: 'nowrap', xs: 'wrap'}
+      }}
       display='flex'
       justifyContent='space-between'
       alignItems='center'
     >
-      <Stack gap={2} width='32%'>
+      <Stack gap={2} width={{md: '32%', sm: '32%', xs: '40%'}}>
 
         <Typography sx={{
           fontFamily: 'Playfair Display',
-          fontSize: {md: '30px', sm: '24px'},
+          fontSize: {md: '30px', sm: '24px', xs: '18px'},
           textDecoration: 'underline',
           fontWeight: '500',
           width: 'auto',
-          opacity: '0.9'
+          opacity: '0.6'
         }}>
           LUCAS ARAUJO
         </Typography>
 
         <Typography sx={{
           fontFamily: 'Playfair Display',
-          fontSize: {md: '28px', sm: '22px'},
+          fontSize: {md: '28px', sm: '22px', xs: '18px'},
           fontWeight: '500',
-          width: {md: '59%', sm: '80%'},
+          width: {md: '59%', sm: '80%', xs: '100%'},
           opacity: '0.6'
         }}>
           Rua Larissa, 171, Duque de Caxias, RJ, Brasil
@@ -37,9 +41,15 @@ function Footer() {
 
       </Stack>
 
-      <Stack direction='row' gap={2} flexWrap='wrap' alignItems='center' width='32%'
+      <Stack
+        direction='row'
+        gap={2}
+        flexWrap='wrap'
+        alignItems='center'
+        width={{md: '32%', sm: '32%', xs: '40%'}}
         sx={{
-          justifyContent: {sm: 'center'}
+          justifyContent: {sm: 'center', xs: 'end'}
+
         }}
       >
         {menuOptions.map(menuItem => (
@@ -77,11 +87,18 @@ function Footer() {
         ))}
       </Stack>
 
-      <Stack gap={2} width='32%' alignItems='flex-end'>
+      <Stack
+        gap={2}
+        width={{md: '32%', sm: '32%', xs: '100%'}}
+        alignItems={{md: 'flex-end', sm: 'flex-end', xs: 'center'}}
+        sx={{
+          flexDirection: {md: 'column', sx: 'column', xs: 'column'}
+        }}
+      >
 
         <Typography sx={{
             fontFamily: 'Playfair Display',
-            fontSize: {md: '20px', sm: '16px'},
+            fontSize: {md: '20px', sm: '16px', xs: '18px'},
             fontWeight: '500',
             opacity: '0.5',
             width: {md: '75%', sm: '100%'}
@@ -91,7 +108,7 @@ function Footer() {
 
         <Typography sx={{
           fontFamily: 'Playfair Display',
-          fontSize: '20px',
+          fontSize: {md: '20px', sm: '20px', xs: '18px'},
           fontWeight: '500',
           opacity: '0.5',
           width: {md: '75%', sm: '100%'}

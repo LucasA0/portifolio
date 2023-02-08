@@ -6,7 +6,7 @@ function Skills() {
 
   return (
     <Box>
-      <Typography mt={10} variant='h2' sx={{
+      <Typography mt={5} variant='h2' sx={{
           fontFamily: 'Playfair Display',
           fontSize: '36px'
         }}
@@ -16,7 +16,7 @@ function Skills() {
       </Typography>
 
       <Box
-        mt={10}
+        mt={5}
         sx={{
           display: 'flex',
           alignItems: 'center',

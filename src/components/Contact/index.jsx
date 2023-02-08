@@ -5,7 +5,7 @@ import { Form } from '../index'
 function Contact() {
   return (
     <Box
-      mt={10}
+      mt={5}
     >
       <Stack
         direction='row'

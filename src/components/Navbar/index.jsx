@@ -4,7 +4,7 @@ import { menuOptions } from '../../utils/menu'
 import { Link } from "react-scroll"
 
 function Navbar() {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -16,10 +16,10 @@ function Navbar() {
   }, [window.innerWidth])
 
   const handleMobileMenu = () => {
-    if(window.innerWidth > 541) {
-      setIsMobile(false)
-    } else {
+    if(window.innerWidth < 541) {
       setIsMobile(true)
+    } else {
+      setIsMobile(false)
     }
   }
 

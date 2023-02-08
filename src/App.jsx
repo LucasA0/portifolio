@@ -16,7 +16,7 @@ function App() {
 
       <About />
 
-      <Typography mt={8} variant='h2' sx={{
+      <Typography mt={5} variant='h2' sx={{
           fontFamily: 'Playfair Display',
           fontSize: '36px'
         }}
