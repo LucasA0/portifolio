@@ -47,6 +47,7 @@ function Navbar() {
           {
             isMobile
             ?
+
             (
               <Box onClick={handleIsMenuOpen}>
                 <img
@@ -56,6 +57,13 @@ function Navbar() {
                   />
               </Box>
               )
+            (<img
+                src="./assets/icons/mobileMenu.png"
+                onClick={handleIsMenuOpen}
+                alt="icone de menu hamburguer"
+                className="mobile-menu"
+              />)
+
             :
             (<Stack direction='row' width={{md: '41%', sm: '46%'}} justifyContent='space-between'>
             {menuOptions.map(item => (
