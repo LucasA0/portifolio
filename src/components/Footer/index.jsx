@@ -8,7 +8,7 @@ function Footer() {
     <Box
       mt={5}
       sx={{
-        background: '#1c1c1c',
+        background: '#1a1a1a',
         height: {md: '250px', sm: '300px', xs: '260px'},
         flexWrap: {md: 'nowrap', sm: 'nowrap', xs: 'wrap'}
       }}

@@ -1,7 +1,8 @@
-import { Stack, Typography } from "@mui/material"
+import { Stack, Typography, Box } from "@mui/material"
 import { useEffect, useState} from "react"
 import { menuOptions } from '../../utils/menu'
 import { Link } from "react-scroll"
+import MenuModal from "../MenuModal";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -46,12 +47,15 @@ function Navbar() {
           {
             isMobile
             ?
-            (<img
-                src="../../../public/assets/icons/mobileMenu.png"
-                onClick={handleIsMenuOpen}
-                alt="icone de menu hamburguer"
-                className="mobile-menu"
-              />)
+            (
+              <Box onClick={handleIsMenuOpen}>
+                <img
+                    src="../../../public/assets/icons/mobileMenu.png"
+                    alt="icone de menu hamburguer"
+                    className="mobile-menu"
+                  />
+              </Box>
+              )
             :
             (<Stack direction='row' width={{md: '41%', sm: '46%'}} justifyContent='space-between'>
             {menuOptions.map(item => (
@@ -89,6 +93,7 @@ function Navbar() {
             ))}
         </Stack>)
           }
+          {isMenuOpen && <MenuModal onClickFn={handleIsMenuOpen}/>}
       </Stack>
   )
 }

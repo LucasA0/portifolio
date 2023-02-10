@@ -2,8 +2,9 @@ import {Box, Stack, Typography} from '@mui/material'
 import AOS from 'aos'
 import { useEffect } from 'react'
 import { menuOptions } from '../../utils/menu'
+import { Link } from 'react-scroll'
 
-function MenuModal() {
+function MenuModal({onClickFn}) {
 
   useEffect(() => {
     AOS.init()
@@ -24,12 +25,14 @@ function MenuModal() {
         sx={{
           width: '100%',
           height: '100%',
-          gap: '20px'
+          gap: '20px',
+          alignItems: 'center',
+          position: 'relative'
         }}
       >
         {menuOptions.map((option) => (
           <Link
-            to={item.href}
+            to={option.href}
             smooth={true}
             offset={0}
             duration={700}
