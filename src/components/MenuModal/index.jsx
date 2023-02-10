@@ -74,7 +74,7 @@ function MenuModal({onClickFn}) {
           onClick={onClickFn}
         >
           <img
-            src='../../../public/assets/icons/mobileCloseMenu.png'
+            src='/assets/icons/mobileCloseMenu.png'
             className='mobile-menu'
             style={{
               width: '30px',

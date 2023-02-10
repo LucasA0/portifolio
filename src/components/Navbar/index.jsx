@@ -50,7 +50,7 @@ function Navbar() {
             (
               <Box onClick={handleIsMenuOpen}>
                 <img
-                    src="../../../public/assets/icons/mobileMenu.png"
+                    src="/assets/icons/mobileMenu.png"
                     alt="icone de menu hamburguer"
                     className="mobile-menu"
                   />
