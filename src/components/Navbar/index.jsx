@@ -25,7 +25,6 @@ function Navbar() {
   }
 
   const handleIsMenuOpen = () => {
-    console.log(isMenuOpen)
     setIsMenuOpen(!isMenuOpen)
   }
 

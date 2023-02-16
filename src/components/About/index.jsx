@@ -70,7 +70,7 @@ function About() {
 
                 data-aos="fade-right"
             >
-                Venho estudando há 8 meses e sinto a cada projeto concluído que a profissão de desenvolvedor
+                Venho estudando há algum tempo e sinto a cada projeto concluído que a profissão de desenvolvedor
                 é onde posso demonstrar todo meu potencial e paixão pela área.
                 Ainda estou em fase de expansão, buscando cada vez mais me aprimorar e aprender novas tecnologias
                 e metodologias. Sempre gostei de desafios e estou aberto a novas experiências.
